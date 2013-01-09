@@ -2,6 +2,14 @@ Tweet Lamp Demo
 ---------------
 
 This demo shows how spacebrew can be used to connect objects to data from webservices, such as twitter. Steps to prepare the demo:  
+
+##Materials Requirements
+* Arduino Uno or Ethernet
+* PowerSwitch Tail
+* Hook-up Cable
+* USB Cable
+* AC-powered lamp
+* DC Power Supply 12v, 0.5a (for Ethernet Arduino only)
   
 ##Figure Out How Arduino Will Connect to Spacebrew  
   
