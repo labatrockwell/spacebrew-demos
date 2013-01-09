@@ -53,7 +53,9 @@
 boolean debug =     true;  // flag that turns on, and off, the debug messages
 
 // mac address of Arduino (just has to be a unique address, not important if it is actual address)
-byte PROGMEM mac[] = { 0x90, 0xa2, 0xda, 0x00, 0x68, 0xf8 };  // mac address to be used to get ip address
+uint8_t mac[] = {0x92, 0xA2, 0xDA, 0x00, 0x68, 0xF8};
+IPAddress ip(128, 122, 151, 115);
+
 char sbName [MAX_NAME_LEN + 1] = "furniture_kit_"; // base name of the app
 int sbNameLen = 14;                                // length of base name
 // IMPORTANT: don't forget to update the server address and description in the spacebrewConnection.connect method
@@ -91,14 +93,15 @@ void setup()   {
   if (debug) Serial.println(F("serial: connected"));
   resetMsg();
 
-  if (Ethernet.begin(mac) == 0) {
-    if (debug) Serial.println(F("ERROR: ethernet"));      
-  } else {
-    if (debug) {
-      Serial.print(F("ethernet: connected\n  - ip: "));
-      Serial.println(Ethernet.localIP());
-    }
-  }
+  Ethernet.begin(mac, ip);
+  // if (Ethernet.begin(mac) == 0) {
+  //   if (debug) Serial.println(F("ERROR: ethernet"));      
+  // } else {
+  //   if (debug) {
+  //     Serial.print(F("ethernet: connected\n  - ip: "));
+  //     Serial.println(Ethernet.localIP());
+  //   }
+  // }
 
   //connect to SB callback methods
   spacebrewConnection.onOpen(onOpen);

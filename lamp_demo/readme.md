@@ -43,7 +43,7 @@ Now that the Arduino is ready to go, let's hook-up the electronics
 If connecting to Spacebrew view Serial/Processing, then launch the processing sketch `lamp_forwarder_pro`. Make sure that you only have one Arduion connected to the computer. [Check Spacebrew admin](http://spacebrew.cc/master/spacebrew/admin/admin.html?server=ec2-184-72-140-184.compute-1.amazonaws.com) to make sure that the `lampPro` client showed up.
 
 ##Launch the Twitter App  
-Go to the terminal app and navigate to the root folder of the twitter app and run the command below. This command launch the spacebrew_twitter app on [`http://localhost:3002`](http://localhost:3002), it sets the base spacebrew server to `ec2-184-72-140-184.compute-1.amazonaws.com`, and the front-end websockets connection to `ws://localhost:3009`.  
+Go to the terminal app and navigate to the root folder of the twitter app and run the command below. This command launch the spacebrew_twitter app on [`http://localhost:3002`](http://localhost:3002/twitter/?server=ec2-184-72-140-184.compute-1.amazonaws.com&name=new_tweets&), it sets the base spacebrew server to `ec2-184-72-140-184.compute-1.amazonaws.com`, and the front-end websockets connection to `ws://localhost:3009`.  
 
 ```
 Personal Set-up Folder Location:

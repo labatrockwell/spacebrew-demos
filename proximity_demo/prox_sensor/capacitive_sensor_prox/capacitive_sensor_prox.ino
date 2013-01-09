@@ -39,8 +39,8 @@
 #define SENSORS       13
 #define TOU_THRESH    0x2F
 #define REL_THRESH    0x2A
-#define PROX_THRESH   0x19
-#define PREL_THRESH   0x16
+#define PROX_THRESH   0x12
+#define PREL_THRESH   0x10
 
 bool debug = true;
 

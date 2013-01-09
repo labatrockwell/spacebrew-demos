@@ -9,8 +9,9 @@
 #include <Ethernet.h>
 #include <WebSocketClient.h>
 
-uint8_t mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress ip(192,168,1, 177);
+uint8_t mac[] = {0x92, 0xA2, 0xDA, 0x00, 0x68, 0xF7};
+ 
+IPAddress ip(128, 122, 151, 76);
 // byte gateway[] = { 10, 0, 0, 1 };
 // byte subnet[] = { 255, 255, 0, 0 };
 
