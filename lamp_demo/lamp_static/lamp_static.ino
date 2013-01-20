@@ -11,7 +11,7 @@
 
 uint8_t mac[] = {0x92, 0xA2, 0xDA, 0x00, 0x68, 0xF7};
  
-IPAddress ip(128, 122, 151, 76);
+IPAddress ip(128, 122, 151, 115);
 // byte gateway[] = { 10, 0, 0, 1 };
 // byte subnet[] = { 255, 255, 0, 0 };
 
